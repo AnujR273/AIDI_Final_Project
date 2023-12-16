@@ -7,8 +7,11 @@ Research Paper: https://arxiv.org/abs/2312.08725
 To run the project files:
 
 Download the .ipynb files.
+
 Download the dataset from the link. 
+
 Make sure all the files are stored in correct path.
+
 Open the .ipynb files on google collab or jupyter notebook.
 
 Code:
