@@ -52,7 +52,7 @@ plt.imshow(wordcloud)
 plt.axis('off')
 plt.show()
 
-Accuracy
+# Accuracy:
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -60,13 +60,10 @@ import pandas as pd
 
 sns.set()
 
-# Ensure Model and Accuracy lists have the same length
 Model = Model[:len(Accuracy)]
 
-# Create a DataFrame to store model names and accuracies
 results_df = pd.DataFrame({'Models': Model, 'Accuracy': Accuracy})
 
-# Sort the DataFrame by accuracy
 results_df = results_df.sort_values(by='Accuracy', ascending=False)
 
 plt.figure(figsize=(10, 6))
@@ -76,7 +73,6 @@ ax.set_ylabel('Accuracy')
 ax.set_xlabel('Classification Models')
 ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
 
-# Displaying the accuracy values on top of the bars
 for p in ax.patches:
     ax.annotate(f'{p.get_height():.2f}%', (p.get_x() + p.get_width() / 2., p.get_height()),
                 ha='center', va='center', fontsize=9, color='black', xytext=(0, 5),
