@@ -1,4 +1,4 @@
-Machine Learning Programming Final Project
+# Machine Learning Programming Final Project
 
 This project is based on https://github.com/shoaibarham/financialsentimentanalysis
 
